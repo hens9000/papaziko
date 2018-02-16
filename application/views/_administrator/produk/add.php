@@ -7,8 +7,23 @@
                <td><?php echo form_input('nama_produk','','class="text-input required"')?></td>
           </tr>
           <tr>
+               <td>Produk Kategori</td>
+               <td>:</td>
+               <td><?php echo form_dropdown('kategori_produk',$data_kategori,'-1','class="select-input nozerounder"')?></td>
+          </tr>
+          <tr>
+               <td>Produk Type</td>
+               <td>:</td>
+               <td><?php echo form_dropdown('type_produk',$data_type,'-1','class="select-input nozerounder"')?></td>
+          </tr>
+          <tr>
+               <td>Harga</td>
+               <td>:</td>
+               <td><?php echo form_input('harga_produk','','class="select-input numbered"')?></td>
+          </tr>
+          <tr>
                <td colspan="2"></td>
-               <td><?php echo form_submit('','Submit Form')?></td>
+               <td><?php echo form_submit('','Tambahkan Produk')?></td>
           </tr>
      </table>
      <?php echo form_close()?>

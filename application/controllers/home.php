@@ -10,7 +10,7 @@ class Home extends Front
      public function index()
      {
           $render = array(
-               'led'     => 'home/index'
+               'led'               => 'home/index',
           );
           $this->render($render);
      }

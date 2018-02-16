@@ -61,6 +61,7 @@ class Back extends CI_Controller
 		$this->load->helper(array(
 			'form'
 		));
+		$this->load->model('generate_input');
 	}
 	
 	public function render($r=array())
