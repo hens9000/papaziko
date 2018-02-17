@@ -11,6 +11,9 @@
      ?>
 </head>
 <body>
-<?php foreach($led as $ledrow){$this->load->view('_administrator/'.$ledrow);}?>
+<?php 
+foreach($led as $ledrow){$this->load->view('_administrator/'.$ledrow);}
+get_js($jsf);
+?>
 </body>
 </html>

@@ -68,7 +68,8 @@ class Back extends CI_Controller
 	{		
 		$r['css']  = grab('css',$r);
 		$r['jsh']  = grab('jsh',$r,array(
-			'jquery-2.0.3.min'
+			'jquery-2.0.3.min',
+			'pzhico'
 		));
 		$r['jsf']  = grab('jsf',$r);
 		$r['led']  = grab('led',$r);
