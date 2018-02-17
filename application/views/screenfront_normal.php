@@ -9,6 +9,9 @@
      ?>
 </head>
 <body>
-     
+<?php 
+foreach($led as $ledrow){$this->load->view('_frontend/'.$ledrow);}
+get_js($jsf);
+?>
 </body>
 </html>

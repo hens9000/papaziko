@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php 
-foreach($led as $ledrow){$this->load->view('_administrator/'.$ledrow);}
+foreach($led as $ledrow){$this->load->view('_backend/'.$ledrow);}
 get_js($jsf);
 ?>
 </body>
