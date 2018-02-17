@@ -1,4 +1,5 @@
 
+     <h1>Form Input Produk</h1>
      <?php echo form_open(base_url('pzhico/produk/add_control'))?>
      <table>
           <tr>
