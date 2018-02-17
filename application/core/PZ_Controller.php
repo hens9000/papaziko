@@ -12,8 +12,10 @@ class Front extends CI_Controller
 	public function render($r=array())
 	{		
 		$r['css']  = grab('css',$r,array(
-			'bootstrap.grid.min',
+			'bootstrap-grid.min',
 			'font-awesome.min',
+			'https://fonts.googleapis.com/css?family=Jockey+One',
+			'pzhico.min'
 		));
 		$r['jsh']  = grab('jsh',$r,array(
 			'jquery-2.0.3.min'

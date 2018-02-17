@@ -1,0 +1,9 @@
+
+	// FONT RECOMENDED FROM GOOGLE FONTS
+	
+	1.	LATO
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel="stylesheet">
+		font-family: 'Lato', sans-serif;
+		
+	2.	OPEN SANS
+		

@@ -31,7 +31,7 @@
           foreach($a as $j){		
                $ext='.js';		
                if(preg_match('/^vendors/',$j)){
-                    $j=base_url('vendor/'.$j.$ext);
+                    $j=base_url('assets/vendor/'.$j.$ext);
                }		
                else if(preg_match('/^http/',$j)){
                     
@@ -51,7 +51,7 @@
           foreach($a as $j){
                $ext='.css';
                if(preg_match('/^vendors/',$j)){
-                    $j=base_url('vendor/'.$j.$ext);
+                    $j=base_url('assets/vendor/'.$j.$ext);
                }
                else if(preg_match('/^http/',$j)){
                     $j=$j.$ext;
@@ -60,7 +60,7 @@
                     $ext='';
                }
                else{
-                    $j=base_url('css/'.$j.$ext);
+                    $j=base_url('assets/css/'.$j.$ext);
                }
                echo '<link rel="stylesheet" href="'.$j.'">';
                //echo "\r\n";
