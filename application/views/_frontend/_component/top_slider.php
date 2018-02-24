@@ -1,4 +1,4 @@
-<div class="rblock_fluid" id="section-slider" style="background-image:url('<?php echo base_url('assets/slider/slider_01.jpg')?>');">
+<div class="rblock_fluid" id="section-slider" style="background-image:url('<?php echo base_url('assets/slider/slider_02.jpg')?>');">
     <div class="rblock">
         <div class="jumbo_title">
             <div class="split_slider"></div>

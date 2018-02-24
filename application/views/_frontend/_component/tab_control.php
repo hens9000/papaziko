@@ -3,15 +3,15 @@
         <div class="row">
             <div class="searchbox">
                 <nav class="nav-searchbox">
-                    <a href="">Pulsa</a>
-                    <a href="">Paket Data</a>
-                    <a href="">Vocher Game</a>
-                    <a href="">Token Listrik</a>
+                    <a href="">PULSA</a>
+                    <a href="">PAKET DATA</a>
+                    <a href="">VOCHER GAME</a>
+                    <a href="">TOKEN LISTRIK</a>
                     <a href="">BPJS</a>
-                    <a href="">TV Kabel</a>
-                    <a href="">Telkom Speedy</a>
-                    <a href="">Tiket Pesawat</a>
-                    <a href="">Tiket Nonton</a>
+                    <a href="">TV KABEL</a>
+                    <a href="">TELKOM SPEEDY</a>
+                    <a href="">TIKET PESAWAT</a>
+                    <a href="">TIKET NONTON</a>
                     <div class="clearfix"></div>
                 </nav>
                 <div class="tab-content-searchbox">
