@@ -26,6 +26,9 @@
           return array_key_exists($a,$b)?a15($c,$b[$a]):a15(array(),$c);
      }
 
+     function rupiah_format($a){
+         return number_format($a,0,'','.');
+     }
 
      function get_js($a){
           foreach($a as $j){		

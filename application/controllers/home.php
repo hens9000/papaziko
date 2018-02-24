@@ -11,6 +11,12 @@ class Home extends Front
      {
           $render = array(
                'led'               => 'home/index',
+               'component'         => avObject(array(
+                   'top_header'     => '_frontend/_component/top_header',
+                   'top_slider'     => '_frontend/_component/top_slider',
+                   'main_control'   => '_frontend/_component/main_control',
+                   'tab_control'   => '_frontend/_component/tab_control'
+               ))
           );
           $this->render($render);
      }

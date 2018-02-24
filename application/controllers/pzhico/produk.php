@@ -14,7 +14,7 @@ class Produk extends Back
 
     public function view()
     {
-
+        
     }
 
     public function tablist()
