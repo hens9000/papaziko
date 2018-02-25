@@ -15,7 +15,9 @@ class Home extends Front
                    'top_header'     => '_frontend/_component/top_header',
                    'top_slider'     => '_frontend/_component/top_slider',
                    'main_control'   => '_frontend/_component/main_control',
-                   'tab_control'   => '_frontend/_component/tab_control'
+                   'tab_control'   => '_frontend/_component/tab_control',
+                   'produk_box'     => '_frontend/_component/produk_box',
+                   'footer'         => '_frontend/_component/main_footer'
                ))
           );
           $this->render($render);
