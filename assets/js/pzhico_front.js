@@ -7,8 +7,10 @@
     }
     resizeCover();
 
-    $(window).resize(function(){
-        resizeCover();
-    })
+    $('#section-slider').zicoSlider({
+        item:['slider_05.jpg','slider_06.jpg','slider_07.jpg'],
+    });
+
+    $(window).resize(function(){resizeCover()})
 
 })(jQuery)

@@ -91,15 +91,14 @@ background-repeat:no-repeat;
     a{
         font-family: 'Lato', tahoma, sans-serif;
         text-decoration:none;
-        padding:10px 15px;
+        padding:10px;
         display:block;
         float:left;
         font-weight:900;
-        font-size:14px;
+        font-size:12px;
         color:#ddd;
         border-bottom:5px solid #386ab5;
         i{
-            font-size:16px;
             padding-right:8px;
             font-weight:normal;
         }
@@ -113,6 +112,15 @@ background-repeat:no-repeat;
         border-right:none;
     }
 }
+}
+
+.section-sub_menu{
+    .parkers{
+        background-color:#fff;
+        padding:20px;
+        border:1px solid #eee;
+        border-top:2px solid #45f110;
+    }
 }
 
 .searchbox{
@@ -163,8 +171,6 @@ h1,h2,h3,h4,h5,h6{
     font-weight:700;
     color:#333;
 }
-
-
 
 
 

@@ -18,6 +18,7 @@ class Front extends CI_Controller
 		));
 		$r['jsh']  = grab('jsh',$r,array(
 			'jquery-2.0.3.min',
+			'jquery.easing.1.3.min',
 			'pzhico'
 		));
 		$r['jsf']  = grab('jsf',$r,array(
