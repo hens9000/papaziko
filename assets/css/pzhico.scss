@@ -48,45 +48,52 @@ background-position:center top;
 
 #section-slider
 {
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-.jumbo_title{
-    position:relative;
-    max-width:500px;            
-    padding:180px 50px;
-    color:#ddd;
-    text-align:right;
-    text-shadow:1px 1px 8px rgba(0,0,0,.8);
-    .split_slider{
-        width:200px;
-        height:100px;
+    .mirror-overlay{
         position:absolute;
-        top:0;
-        left:0;
-        background-image:url('../img/plit_slider.png');
-        background-repeat:no-repeat;
-        background-position:center top;
+        top:0;left:0;right:0;bottom:0;
+        background-image:url('../img/pattern-overlay.png');
+        background-repeat:repeat;
+        background-color:rgba(0,0,0,.3);
     }
-    h1{
-        padding-top:10px;
-        font-size:70px;
-        line-height:70px;
-        color:#fff;
+
+    .jumbo_title{
+        position:relative;
+        max-width:500px;            
+        padding:180px 50px;
+        color:#ddd;
+        text-align:right;
+        text-shadow:1px 1px 8px rgba(0,0,0,.8);
+        .split_slider{
+            width:200px;
+            height:100px;
+            position:absolute;
+            top:0;
+            left:0;
+            background-image:url('../img/plit_slider.png');
+            background-repeat:no-repeat;
+            background-position:center top;
+        }
+        h1{
+            padding-top:10px;
+            font-size:70px;
+            line-height:70px;
+            color:#fff;
+        }
+        p{
+            padding-top:10px;
+            font-weight:700;
+            font-size:20px;
+        }
     }
-    p{
-        padding-top:10px;
-        font-weight:700;
-        font-size:20px;
-    }
-}
 }
 
 .section-main_menu{
-    background-color:#386ab5;
+    background-color:rgb(56, 106, 181);
     nav.main_menu{
-    padding-top:15px;
     margin:auto;
     a{
         font-family: 'Lato', tahoma, sans-serif;
@@ -103,7 +110,7 @@ background-repeat:no-repeat;
             font-weight:normal;
         }
     }
-    a:hover{
+    a:hover,.track-menu-active{
         color:#333;
         border-bottom:5px solid #45f110;
         background-color:#fff;
@@ -120,6 +127,7 @@ background-repeat:no-repeat;
         padding:20px;
         border:1px solid #eee;
         border-top:2px solid #45f110;
+        box-shadow:0 0 10px rgba(0,0,0,.2)
     }
 }
 

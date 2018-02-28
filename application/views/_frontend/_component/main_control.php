@@ -2,13 +2,13 @@
     <div class="rblock">
         <div class="row">
             <nav class="main_menu">
-                <a href="#"><i class="fa fa-home"></i>HOME</a>
-                <a href="#"><i class="fa fa-barcode"></i>PRODUCT</a>
-                <a href="#"><i class="fa fa-calendar"></i>EVENT PROMO</a>
-                <a href="#"><i class="fa fa-bookmark"></i>BRAND</a>
-                <a href="#"><i class="fa fa-user"></i>AGEN</a>
-                <a href="#"><i class="fa fa-info-circle"></i>INFO</a>
-                <a href="#"><i class="fa fa-shopping-cart"></i>CART</a>
+                <a href="#" class="track-menu"><i class="fa fa-home"></i>HOME</a>
+                <a href="#" class="track-menu"><i class="fa fa-barcode"></i>PRODUCT</a>
+                <a href="#" class="track-menu"><i class="fa fa-calendar"></i>EVENT PROMO</a>
+                <a href="#" class="track-menu"><i class="fa fa-bookmark"></i>BRAND</a>
+                <a href="#" class="track-menu"><i class="fa fa-user"></i>AGEN</a>
+                <a href="#" class="track-menu"><i class="fa fa-info-circle"></i>INFO</a>
+                <a href="#" class="track-menu"><i class="fa fa-shopping-cart"></i>CART</a>
                 <div class="clearfix"></div>
             </nav>
         </div>

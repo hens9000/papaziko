@@ -46,6 +46,15 @@
         var min=0,max=x.sliderItem;
     }
 
+    function trackMenu()
+    {
+        $('.track-menu').bind('click',function(e){
+            e.preventDefault();
+            $('.track-menu').removeClass('track-menu-active');
+            $(this).addClass('track-menu-active');
+        })
+    }
+
 
     $.fn.zicoSlider = function(a){
         return $(this).each(function(){

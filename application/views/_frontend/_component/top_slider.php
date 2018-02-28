@@ -1,5 +1,6 @@
 
 <div class="rblock_fluid" id="section-slider">
+    <div class="mirror-overlay"></div>
     <div class="rblock">
         <div class="jumbo_title">
             <div class="split_slider"></div>
