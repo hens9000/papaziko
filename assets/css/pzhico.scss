@@ -124,9 +124,8 @@ background-position:center top;
 .section-sub_menu{
     .parkers{
         background-color:#fff;
-        padding:20px;
         border:1px solid #eee;
-        border-top:2px solid #45f110;
+        border-top:3px solid #45f110;
         box-shadow:0 0 10px rgba(0,0,0,.2)
     }
 }
@@ -178,6 +177,49 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Oswald', arial, sans-serif;
     font-weight:700;
     color:#333;
+}
+
+.tbx-header{
+    border-bottom:1px solid #ddd;
+    a{
+        display:block;
+        float:left;
+        padding:10px;
+        border-right:1px solid #ddd;
+        text-decoration:none;
+        color:#999;
+        font-weight:900;
+    }
+    .active{
+        background-color:#45f110;
+        color:#fff;
+    }
+}
+.tbx-content{
+    clear:both;
+    .tab-data-content{
+        display:none;
+
+        h1{
+            padding:40px;
+            text-align:right;
+            font-size:36px;
+            line-height:40px;
+        }
+
+        .nav-item-intab{
+            padding:40px;
+            max-width:400px;
+            a{
+                width:180px;
+                display:block;
+                padding:5px 9px;
+                float:left;
+                text-decoration:none;
+                color:#666;
+            }
+        }
+    }
 }
 
 

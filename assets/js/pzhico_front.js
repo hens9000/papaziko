@@ -13,6 +13,17 @@
         item:['slider_05.jpg','slider_06.jpg','slider_07.jpg'],
     });
 
+    $('[tab-id]').eq(0).show();
+    $('[go-tab]').eq(0).addClass('active');
+    $('[go-tab]').bind('click',function(e){
+        e.preventDefault();
+        $('[go-tab]').removeClass('active');
+        $(this).addClass('active');
+        $('[tab-id]').hide();
+        console.log()
+        $('[tab-id="'+$(this).attr('go-tab')+'"]').show();
+    })
+
     $(window).resize(function(){resizeCover()})
 
 })(jQuery)

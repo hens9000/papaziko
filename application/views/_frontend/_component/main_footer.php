@@ -11,6 +11,13 @@
             </div>
             <div class="rs3">
                 <h3>QUICK LINK</h3>
+                <ul>
+                    <?php foreach($footer_quicklink as $r):?>
+                    <li>
+                        <a title="<?php echo $r->module_sub_name?>" href="<?php echo base_url('produk/catalog/'.$r->module_sub_id)?>"><?php echo strtoupper($r->module_sub_name)?></a>
+                    </li>
+                    <?php endforeach;?>
+                </ul>
             </div>
             <div class="rs3">
                 <h3>INFORMATION</h3>

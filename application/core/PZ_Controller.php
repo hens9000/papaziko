@@ -4,7 +4,7 @@ class PZ_Controller extends CI_Controller{}
 
 class Front extends CI_Controller
 {
-    	public function __construct()
+    public function __construct()
 	{
 		parent::__construct();
 	}
@@ -53,9 +53,38 @@ class Front extends CI_Controller
 			'template'      => 'screenfront_normal',
 			'title' 		 => 'Pzhico Store',
 			'shortcut_icon' => '',
+			'footer_quicklink' => $this->setFooterQuicklink(),
+			'tab_link' => $this->setLinkTabProduct()
 		);
 		$render = array_merge($global,$r);		
 		$this->load->view($render['template'],$render);
+	}
+
+	private function setFooterQuicklink()
+	{
+		$data = $this->mdl->filter('module_sub a',array(
+			'a.flag' => 1,
+			'a.module_id' => 2
+		))->result();
+		return $data;
+	}
+
+	private function setLinkTabProduct()
+	{
+		$data = $this->mdl->filter('module_sub a',array(
+			'a.flag' => 1,
+			'a.module_id' => 2
+		))->result();
+
+		foreach($data as $r)
+		{
+			$r->sub_menu = $this->mdl->filter('module_item a',array(
+				'a.flag' => 1,
+				'a.module_sub_id' => $r->module_sub_id
+			))->result();
+		}
+
+		return $data;
 	}
 }
 

@@ -14,10 +14,34 @@
         </div>
     </div>
 </div>
+
+
 <div class="rblock_fluid section-sub_menu">
     <div class="rblock">
         <div class="row parkers">
-            a
+            <nav class="tbx-header">
+                <?php foreach($tab_link as $r):?>
+                <a go-tab="<?php echo 'ptab-'.$r->module_sub_id?>" href="#"><?php echo $r->module_sub_name?></a>
+                <?php endforeach;?>
+                <div class="clearfix"></div>
+            </nav>
+            <div class="tbx-content">
+                <?php foreach($tab_link as $r):?>
+                <div class="row tab-data-content" tab-id="<?php echo 'ptab-'.$r->module_sub_id?>">
+                    <div class="rs3">
+                        <h1><?php echo ucwords($r->module_sub_name)?></h1>
+                    </div>
+                    <div class="rs9">
+                        <nav class="nav-item-intab">
+                            <?php foreach($r->sub_menu as $v):?>
+                            <a href="<?php echo $v->module_item_name?>"><?php echo $v->module_item_name?></a>
+                            <?php endforeach;?>
+                            <div class="clearfix"></div>
+                        </nav>
+                    </div>
+                </div>
+                <?php endforeach;?>
+            </div>
         </div>
     </div>
 </div>
