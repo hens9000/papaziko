@@ -34,7 +34,7 @@
                     <div class="rs9">
                         <nav class="nav-item-intab">
                             <?php foreach($r->sub_menu as $v):?>
-                            <a href="<?php echo $v->module_item_name?>"><?php echo $v->module_item_name?></a>
+                            <a href="<?php echo $v->module_item_name?>"><?php echo strtoupper($v->module_item_name)?></a>
                             <?php endforeach;?>
                             <div class="clearfix"></div>
                         </nav>

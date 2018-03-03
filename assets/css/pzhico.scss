@@ -126,7 +126,6 @@ background-position:center top;
         background-color:#fff;
         border:1px solid #eee;
         border-top:3px solid #45f110;
-        box-shadow:0 0 10px rgba(0,0,0,.2)
     }
 }
 
@@ -174,7 +173,8 @@ background-position:center top;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Oswald', arial, sans-serif;
+    font-family: 'Lato', tahoma, sans-serif;
+    /* font-family: 'Oswald', arial, sans-serif; */
     font-weight:700;
     color:#333;
 }
@@ -213,12 +213,27 @@ h1,h2,h3,h4,h5,h6{
             a{
                 width:180px;
                 display:block;
-                padding:5px 9px;
+                padding:3px 9px;
                 float:left;
                 text-decoration:none;
                 color:#666;
+                font-weight:bold;
+                font-size:11px;
+            }
+            a:hover{
+                color:#386ab5;
             }
         }
+    }
+}
+
+.bottom-link{
+    a{
+        display:block;text-decoration:none;
+        color:#fff;
+        font-weight:900;
+        font-size:11px;
+        padding:2px 0;
     }
 }
 
@@ -302,7 +317,7 @@ h1,h2,h3,h4,h5,h6{
             background-position:center right;
             background-repeat:no-repeat;
             h3{
-                font-family: 'Oswald', arial, sans-serif;
+                font-family: 'Lato', tahoma, sans-serif;
                 font-weight:700;
                 color:#fff;
                 font-size:20px;
@@ -337,7 +352,7 @@ h1,h2,h3,h4,h5,h6{
             }
         }
         .produk-caps{
-            font-family: 'Oswald', arial, sans-serif;
+            font-family: 'Lato', tahoma, sans-serif;
             font-weight:700;
             font-size:14px;
             position:absolute;
@@ -425,3 +440,81 @@ h1,h2,h3,h4,h5,h6{
         color:#999;
     }
 }
+
+
+
+
+
+/* content */
+
+.bullets_list{
+    padding:20px;
+    color:#333;
+    h3,h2,h2{
+        padding-bottom:10px;
+    }
+    p{
+        padding:5px 0;
+        color:#999;
+        font-weight:400;
+        font-size:14px;
+        line-height:20px;
+    }
+}
+
+.faq-box{
+    padding:0 20px;
+    margin:20px;
+    color:#333;
+    border-left:4px solid #84e116;
+    .questions{
+        font-weight:900;
+        font-size:14px;
+        color:#999;
+        font-family: 'Lato', tahoma, sans-serif;
+    }
+    .answers{
+        font-weight:400;
+        font-style:italic;
+        font-size:13px;
+        color:#ccc;
+    }
+}
+
+
+
+/* forms */
+
+.isForms{
+    input,select,textarea{
+        font-family: 'Lato', tahoma, sans-serif;
+        font-size:14px;
+        background-color:#fff;
+        color:#ccc;
+        padding:8px;
+        margin:0 5px;
+        border:1px solid #fff;
+        border-bottom:1px solid #eee;
+        outline:none;
+        box-sizing:margin-box;
+        display:block;
+        width:100%;
+    }
+    select{
+        padding:7px;
+    }
+    .form-list{
+        padding:10px;
+    }
+    .label-title{
+        font-weight:900;
+        padding:8px 15px;
+        text-align:right;
+        display:block;
+        color:#333;
+    }
+    .toUppercase{
+        text-transform: uppercase;
+    }
+}
+    

@@ -11,16 +11,20 @@
             </div>
             <div class="rs3">
                 <h3>QUICK LINK</h3>
-                <ul>
+                <nav class="bottom-link">
                     <?php foreach($footer_quicklink as $r):?>
-                    <li>
-                        <a title="<?php echo $r->module_sub_name?>" href="<?php echo base_url('produk/catalog/'.$r->module_sub_id)?>"><?php echo strtoupper($r->module_sub_name)?></a>
-                    </li>
+                    <a title="<?php echo $r->module_sub_name?>" href="<?php echo base_url('produk/catalog/'.$r->module_sub_id)?>"><?php echo strtoupper($r->module_sub_name)?></a>
                     <?php endforeach;?>
-                </ul>
+                </nav>
             </div>
             <div class="rs3">
                 <h3>INFORMATION</h3>
+                <nav class="bottom-link">
+                    <a href="#">PANDUAN BERBELANJA</a>
+                    <a href="#">SISTEM PEMBAYARAN</a>
+                    <a href="#">ORDER GROSIR</a>
+                    <a href="#">PAKET PENGIRIMAN</a>
+                </nav>
             </div>
             <div class="rs3"></div>
         </div>
