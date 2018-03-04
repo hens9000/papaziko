@@ -19,7 +19,7 @@ body{
 
 .head_logo{
     width:300px;
-    height:80px;
+    height:100px;
     margin-left:60px;
     background-image:url('../img/logo.png');
 background-repeat:no-repeat;
@@ -122,6 +122,7 @@ background-position:center top;
 }
 
 .section-sub_menu{
+    display:none;
     .parkers{
         background-color:#fff;
         border:1px solid #eee;
@@ -131,11 +132,13 @@ background-position:center top;
 
 .searchbox{
     background-color:#fff;
-    
+    border:1px solid #ddd;
+    border-radius:4px;
+    overflow:hidden;
     margin-top:15px;
     .nav-searchbox{
         display:block;
-        border-bottom:1px solid #ddd;
+        border-bottom:1px solid #eee;
         a{
             font-family: 'Lato', tahoma, sans-serif;
             border-right:1px solid #eee;
@@ -155,8 +158,23 @@ background-position:center top;
         }
     }
     .tab-content-searchbox{
-        background-color:#fff;
+        background-color:#f9f9f9;
         padding:20px;
+
+        h3{
+            font-size:14px;font-weight:900;
+        }
+        p{
+            font-size:12px;
+            color:#333;
+            font-weight:400;
+            padding:5px 0;
+            a{
+                text-decoration:none;
+                font-weight:900;
+                color:#386ab5;
+            }
+        }
     }
 }
 
@@ -180,18 +198,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .tbx-header{
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid #eee;
     a{
         display:block;
         float:left;
         padding:10px;
-        border-right:1px solid #ddd;
+        border-right:1px solid #eee;
         text-decoration:none;
         color:#999;
         font-weight:900;
     }
+    a:hover{
+        color:#386ab5;
+    }
     .active{
         background-color:#45f110;
+        color:#fff;
+    }
+    .active:hover{
         color:#fff;
     }
 }
@@ -199,29 +223,37 @@ h1,h2,h3,h4,h5,h6{
     clear:both;
     .tab-data-content{
         display:none;
-
+        background-position:right center;
+        background-repeat:no-repeat;
+        min-height:200px;
         h1{
-            padding:40px;
+            padding:50px;
             text-align:right;
-            font-size:36px;
-            line-height:40px;
+            font-size:24px;
+            line-height:30px;
+            color:#333;
         }
 
         .nav-item-intab{
             padding:40px;
             max-width:400px;
             a{
-                width:180px;
+                width:170px;
                 display:block;
                 padding:3px 9px;
+                padding-left:20px;
                 float:left;
                 text-decoration:none;
                 color:#666;
                 font-weight:bold;
                 font-size:11px;
+                background-image:url('../img/r-arrow.png');
+                background-position:1px 5px;
+                background-repeat:no-repeat;
             }
             a:hover{
                 color:#386ab5;
+                background-image:url('../img/r-arrow-hover.png');
             }
         }
     }
@@ -489,11 +521,10 @@ h1,h2,h3,h4,h5,h6{
     input,select,textarea{
         font-family: 'Lato', tahoma, sans-serif;
         font-size:14px;
-        background-color:#fff;
-        color:#ccc;
+        background-color:#eeeeee;
+        color:#999;
         padding:8px;
         margin:0 5px;
-        border:1px solid #fff;
         border-bottom:1px solid #eee;
         outline:none;
         box-sizing:margin-box;
@@ -515,6 +546,27 @@ h1,h2,h3,h4,h5,h6{
     }
     .toUppercase{
         text-transform: uppercase;
+    }
+    .inps-btn{
+        font-family: 'Lato', tahoma, sans-serif;
+        padding:10px 15px;
+        background-color:#386ab5;
+        color:#fff;
+        font-weight:900;
+        cursor:pointer;
+        text-transform: uppercase;
+        font-size:12px;
+        line-height:16px;
+        border:none;
+        i{
+            padding-right:10px;
+            font-weight:normal;
+        }
+    }
+
+    .inps-btn-submit{
+        background-color:#386ab5;
+        color:#fff;
     }
 }
     

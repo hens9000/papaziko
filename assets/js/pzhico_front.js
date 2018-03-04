@@ -24,6 +24,15 @@
         $('[tab-id="'+$(this).attr('go-tab')+'"]').show();
     })
 
+    $('.track-menu').bind('click',function(){
+        $('.section-sub_menu').hide();
+        if($(this).attr('ftarget'))
+        {
+            var tg=$(this).attr('ftarget');
+            $('[gtarget="'+tg+'"]').show();
+        }
+    })
+
     $(window).resize(function(){resizeCover()})
 
 })(jQuery)
