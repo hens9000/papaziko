@@ -2,7 +2,7 @@
 
 <?php
 $this->load->view($component->top_header);
-//$this->load->view($component->top_slider);
+$this->load->view($component->top_slider);
 $this->load->view($component->main_control);
 $this->load->view($component->tab_control);
 ?>
@@ -25,7 +25,7 @@ $this->load->view($component->tab_control);
             </div>
         </h2>
         <div class="row">
-            <?php for($i=1;$i<=4;$i++) $this->load->view($component->produk_box); ?>
+            <?php for($i=1;$i<=20;$i++) $this->load->view($component->produk_box); ?>
         </div>
     </div>
     
