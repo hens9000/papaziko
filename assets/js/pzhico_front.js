@@ -5,7 +5,7 @@
     function resizeCover()
     {
         var wdt=Number($('.produk-box>.cover').width()),wdh=Math.ceil(wdt*1.5);
-        $('.produk-box>.cover').height(wdh);
+        $('.produk-box>.cover').height(wdt);
     }
     resizeCover();
 
@@ -33,6 +33,23 @@
         }
     })
 
-    $(window).resize(function(){resizeCover()})
+    function stickyProdukBox(){        
+        if($(window).width() >= 769){
+            $('.sticky-kid-produk_box').stick_in_parent().on("sticky_kit:stick",function(e){
+                var $this = $(e.target).parent(),
+                    top = $this.next().height() - $(this).height() - 10;                
+                $this.css({'top':'top'});    
+            });
+        }
+        else{
+            $('.sticky-kid-produk_box').trigger("sticky_kit:detach");
+        }    
+    }
+    stickyProdukBox();
+
+    $(window).resize(function(){
+        resizeCover()
+        stickyProdukBox()
+    })
 
 })(jQuery)
