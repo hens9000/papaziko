@@ -8,6 +8,19 @@ class Front extends CI_Controller
 	{
 		parent::__construct();
 	}
+
+	public function _component($a=array())
+	{
+		$base_component = '_frontend/_component/';
+		$_component = avObject(array_merge(array(
+			'_top_header' 		=> 'top_header',
+			'_main_control'		=> 'main_control',
+			'_footer'         	=> 'main_footer',
+		),$a));
+
+		foreach($_component as $r=>$v){ $_component->$r = $base_component.$v; }
+		return $_component;
+	}
 	
 	public function render($r=array())
 	{		
@@ -20,6 +33,7 @@ class Front extends CI_Controller
 			'jquery-2.0.3.min',
 			'jquery.easing.1.3.min',
 			'jquery.sticky-kit.min',
+			'jquery.slimscroll.min',
 			'pzhico'
 		));
 		$r['jsf']  = grab('jsf',$r,array(
